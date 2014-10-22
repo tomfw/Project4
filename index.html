@@ -1,0 +1,46 @@
+<HTML>
+	<HEAD>
+		<TITLE>Magic Square Game</TITLE>
+		<SCRIPT SRC="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" >dddreer</script>
+		<SCRIPT TYPE = "text/javascript" SRC="magic_squares.js" > eerrrasdf</script>
+		<LINK REL="stylesheet" TYPE="text/css" HREF="magic_squares.css" />
+	</HEAD>
+	
+	<BODY>
+		<CENTER>
+		<H1>Magic Square</H1>
+			<TABLE>
+		
+				<TR>
+					<TD><INPUT TYPE="TEXT" NAME="0" ONFOCUS="userBeganEditing(0,0)" ONBLUR="userFinishedEditing(0,0)"/></TD>
+					<TD><INPUT TYPE="TEXT" NAME="1" ONFOCUS="userBeganEditing(1,0)" ONBLUR="userFinishedEditing(1,0)"/></TD>
+					<TD><INPUT TYPE="TEXT" NAME="2" ONFOCUS="userBeganEditing(2,0)" ONBLUR="userFinishedEditing(2,0)"/></TD>
+					<TD class = "total"><INPUT TYPE="TEXT" NAME="ROW0" /></TD>
+				</TR>
+			
+				<TR>
+					<TD><INPUT TYPE="TEXT" NAME="3" ONFOCUS="userBeganEditing(0,1)" ONBLUR="userFinishedEditing(0,1)"/></TD>
+					<TD><INPUT TYPE="TEXT" NAME="4" ONFOCUS="userBeganEditing(1,1)" ONBLUR="userFinishedEditing(1,1)"/></TD>
+					<TD><INPUT TYPE="TEXT" NAME="5" ONFOCUS="userBeganEditing(2,1)" ONBLUR="userFinishedEditing(2,1)"/></TD>
+					<TD class = "total"><INPUT TYPE="TEXT" NAME="ROW1" /></TD>
+				</TR>
+			
+				<TR>
+					<TD><INPUT TYPE="TEXT" NAME="6" ONFOCUS="userBeganEditing(0,2)" ONBLUR="userFinishedEditing(0,2)"/></TD>
+					<TD><INPUT TYPE="TEXT" NAME="7" ONFOCUS="userBeganEditing(1,2)" ONBLUR="userFinishedEditing(1,2)"/></TD>
+					<TD><INPUT TYPE="TEXT" NAME="8" ONFOCUS="userBeganEditing(2,2)" ONBLUR="userFinishedEditing(2,2)"/></TD>
+					<TD class = "total"><INPUT TYPE="TEXT" NAME="ROW2" /></TD>
+				</TR>
+				<TR>
+					<TD class = "total"><INPUT TYPE="TEXT" NAME="COL0" /></TD>
+					<TD class = "total"><INPUT TYPE="TEXT" NAME="COL1" /></TD>
+					<TD class = "total"><INPUT TYPE="TEXT" NAME="COL2" /></TD>
+					<TD class = "total"><INPUT TYPE="TEXT" NAME="DIAG" /></TD>
+				</TR>
+			</TABLE>
+		</CENTER>
+		<P>Relaxed:<IMG SRC="check.png" /> </P>
+		<P>Magic-Square:<IMG SRC ="check.png" /> </P>
+		<P><A HREF="GITLINK.GOV">Git</A>  <A HREF="PHONEGAPLINK.GOV">PhoneGapBuild</A>
+	</BODY>
+</HTML>

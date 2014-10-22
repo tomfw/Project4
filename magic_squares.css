@@ -1,0 +1,43 @@
+body {
+	background: white;
+	padding-left: 10px;
+	width: 300px;
+}
+
+table {
+	table-layout: fixed;
+	width: 200px;
+}
+
+td {
+	width: 25%;
+	height: 50px;
+	
+}
+
+td.total {
+	width: 25%;
+	background: grey;
+}
+
+input {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	text-align: center;
+	font-size: 14px;
+}
+
+td.total input {
+	text-decoration: bold;
+	font-size: 20px;
+}
+
+img {
+	width: 16px;
+	height: 16px;
+}
+
+p {
+	padding-left: 50px;
+}
