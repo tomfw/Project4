@@ -8,18 +8,14 @@ $(document).ready(function() {
 });
 
 function userBeganEditing(row, column) {
-	var display = "User began editing  ("+row+","+column+") which has value " + valueOfCell(row,column) + ".<br />";
 	previousValue = valueOfCell(row,column);
-	print(display);
 }
 
 function userFinishedEditing(row, column) {
 	var newValue = valueOfCell(row,column);
 	if(newValue > 9 || newValue < 1) {
 		setValueOfCell(row,column, previousValue);
-		print("Invalid input blocked <br />");
 	} else {
-		print("Setting (" + row+  "," + column + ") to " + newValue + ".<br />");
 		
 		for(var i = 0; i < 3; i++) {
 			for(var j = 0; j < 3; j++) {
@@ -28,7 +24,6 @@ function userFinishedEditing(row, column) {
 				
 					if(valueOfCell(i,j) == newValue) {
 						setValueOfCell(i,j,previousValue);
-						print("Swapped for uniqueness! <br />");
 					}
 					
 				}
